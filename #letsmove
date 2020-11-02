@@ -1,0 +1,31 @@
+using System;
+
+public class Program
+{
+	public static void Main()
+	{
+		Random r = new Random();
+		int posX = 0;
+		int posY = 0;
+		int posX2 = r.Next(50, 1001);
+		int posY2 = r.Next(50, 1001);
+		if (posX < posX2 && posY < posY2)
+		{
+			for (int i = 0; i < posX2; i++)
+			{
+				posX = posX + 1;
+				Console.WriteLine("posição X = " + posX);
+				Console.WriteLine("posição Y = " + posY);
+				Console.WriteLine("---------------");
+			}
+
+			for (int i2 = 0; i2 < posY2; i2++)
+			{
+				posY = posY + 1;
+				Console.WriteLine("posição X = " + posX);
+				Console.WriteLine("posição Y = " + posY);
+				Console.WriteLine("---------------");
+			}
+		}
+	}
+}
