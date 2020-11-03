@@ -1,0 +1,13 @@
+using System;
+
+public class Program
+{
+	public static void Main()
+	{
+		
+		string name = "bruh";
+
+		Console.WriteLine("You're such a noob " + name + " It's always good to have newbies around here");
+		
+	}
+}
