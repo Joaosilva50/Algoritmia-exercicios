@@ -1,0 +1,16 @@
+using System;
+
+public class Program
+{
+	public static void Main()
+	{
+		
+		string nickname = "new phone who dis";
+		int level = 10;
+		string race = "ork";
+		char gender = f;
+		string faction = "alliance";
+		string class1 = "warrior";
+		
+	}
+}
