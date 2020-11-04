@@ -1,0 +1,22 @@
+using System;
+
+public class Program
+{
+	public static void Main()
+	{
+		Random r = new Random();
+		int N = r.Next(10, 36);
+		int nota = 0;
+		int alunos = 0;
+		for (int i = 0; i < N; i++)
+		{
+			nota = r.Next(1, 21);
+			if (nota >= 15)
+			{
+				alunos++;
+			}
+		}
+
+		Console.WriteLine(alunos + " alunos tiveram nota maior que 15");
+	}
+}
