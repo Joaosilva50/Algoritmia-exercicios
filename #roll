@@ -1,0 +1,22 @@
+using System;
+
+public class Program
+{
+	public static void Main()
+	{
+		Random r = new Random();
+		
+		int roll1 = r.Next(1,7);
+		int roll2 = r.Next(1,7);
+		
+		if(roll1 < roll2){
+			Console.WriteLine("player 2 gets the item");
+		}
+		if(roll1 > roll2){
+			Console.WriteLine("player 1 gets the item");
+		}
+		if(roll1 == roll2){
+			Console.WriteLine("roll was equal, reroll");
+		}
+	}
+}
