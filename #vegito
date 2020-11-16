@@ -1,0 +1,22 @@
+using System;
+
+public class Program
+{
+	public static void Main()
+	{
+		Random r = new Random();
+		
+		int att1 = r.Next(10,51);
+		int def1 = r.Next(10,51);
+		int intel1 = r.Next(10,51);
+		
+		int att2 = r.Next(10,51);
+		int def2 = r.Next(10,51);
+		int intel2 = r.Next(10,51);
+		
+		
+		Console.WriteLine("combined attack = " + (att1+att2));
+		Console.WriteLine("combined defense = " + (def1+def2));
+		Console.WriteLine("combined intellect = " + (intel1+intel2));
+	}
+}
