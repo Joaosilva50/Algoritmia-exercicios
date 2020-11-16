@@ -1,0 +1,16 @@
+using System;
+
+public class Program
+{
+	public static void Main()
+	{
+		Random r = new Random();
+		
+		int attack = r.Next(10,101);
+		int powerUp = attack + attack/2;
+		
+		Console.WriteLine("player's attack is " + attack);
+		Console.WriteLine("player's attack powered up is  " + powerUp);
+		
+	}
+}
