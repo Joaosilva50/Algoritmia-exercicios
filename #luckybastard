@@ -1,0 +1,20 @@
+using System;
+
+public class Program
+{
+	public static void Main()
+	{
+		Random r = new Random();
+		
+		int hp = 100;
+		int att1 = r.Next(1,50);
+		int att2 = r.Next(1,50);
+		int att3 = 99 - (att1 + att2);
+		
+		
+		Console.WriteLine(att1);
+	    Console.WriteLine(att2);
+		Console.WriteLine(att3);
+		Console.WriteLine(hp - (att1 + att2 + att3) + " hp, Lucky!");
+	}
+}
