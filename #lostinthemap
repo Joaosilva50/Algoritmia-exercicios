@@ -1,0 +1,29 @@
+using System;
+
+public class Program
+{
+	public static void Main()
+	{
+		Random r = new Random();
+		
+		int posX = r.Next(0,501);
+		int posY = r.Next(0,501);
+		string vertical = "olá";
+		string horizontal = "olá";
+		
+		if(posX <250){
+			horizontal = "left";
+		}else if(posX>250){
+			horizontal = "right";
+		}
+		
+		if(posY <250){
+			vertical = "top";
+		}else if(posY>250){
+			vertical = "bottom";
+		}
+		
+		Console.WriteLine("player is in the " + vertical + "-" + horizontal + " side of the map");
+	
+	}
+}
