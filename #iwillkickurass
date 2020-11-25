@@ -1,0 +1,21 @@
+using System;
+
+public class Program
+{
+	public static void Main()
+	{
+		Random r = new Random();
+		int hp1 = r.Next(100, 201);
+		int hp2 = r.Next(100, 201);
+		int attack1 = r.Next(10, 51);
+		int attack2 = r.Next(10, 51);
+		while (hp1 > 0 && hp2 > 0)
+		{
+			hp1 = hp1 - attack2;
+			hp2 = hp2 - attack1;
+			Console.WriteLine("player 1 health:" + hp1);
+			Console.WriteLine("player 2 health:" + hp2);
+			Console.WriteLine("--------------------------");
+		}
+	}
+}
