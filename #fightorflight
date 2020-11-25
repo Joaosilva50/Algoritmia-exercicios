@@ -1,0 +1,25 @@
+using System;
+
+public class Program
+{
+	public static void Main()
+	{
+		Random r = new Random();
+		
+		int posX1 = r.Next(1,501);
+		int posY1 = r.Next(1,501);
+		
+		int posX2 = r.Next(1,501);
+		int posY2 = r.Next(1,501);
+		
+		int difPosX = posX1 - posX2;
+		int difPosY = posY1 - posY2;
+		
+		
+		if(Math.Sqrt((difPosX * difPosX) + (difPosY * difPosY)) < 20){
+			Console.WriteLine("player 2 ran away");
+		}
+		
+		
+	}
+}
