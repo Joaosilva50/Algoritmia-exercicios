@@ -1,0 +1,33 @@
+using System;
+
+public class Program
+{
+	public static void Main()
+	{
+		Random r = new Random();
+		
+		int loot1 = r.Next(1,101);
+		int loot2 = r.Next(1,101);
+		string l1;
+		string l2;
+		
+		if(loot1 <= 10){
+			l1 = "rare";
+		}else if(loot1 > 70){
+			l1 ="uncommon";
+		}else{
+			l1 ="common";
+		}
+			
+		if(loot2 <= 10){
+			l2 = "rare";
+		}else if(loot2 > 70){
+			l2 ="uncommon";
+		}else{
+			l2 ="common";
+		}	
+		
+		Console.WriteLine("1st item:" + l1); 
+		Console.WriteLine("2nd item:" + l2); 
+	}
+}
