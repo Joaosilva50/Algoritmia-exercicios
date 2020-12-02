@@ -1,0 +1,20 @@
+using System;
+
+public class Program
+{
+	public static void Main()
+	{
+		
+		
+		Random r = new Random();
+		
+		int num1 = r.Next(1,51);
+		int num2 = r.Next(51,101);
+		
+		for(int i = num1;i<num2;i++){
+			Console.WriteLine(i);
+		}
+		
+		
+	}
+}
