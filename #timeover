@@ -1,0 +1,20 @@
+using System;
+
+public class Program
+{
+	public static void Main()
+	{
+		
+		int i;
+		Random r = new Random();
+		
+		for(i= 100;i> 0;i--){
+			Console.WriteLine(i);
+		}
+		
+		if(i == 0){
+			Console.WriteLine("game over");
+		}
+		
+	}
+}
