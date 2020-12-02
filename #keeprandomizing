@@ -1,0 +1,26 @@
+using System;
+
+public class Program
+{
+	public static void Main()
+	{
+		
+		
+		Random r = new Random();
+		
+		
+		int i;
+		int posX;
+		int posY;
+		
+		
+		for(i=0;i<r.Next(1,40);i++){
+			posX = r.Next(1,501);
+			posY = r.Next(1,501);
+			Console.WriteLine(posX);
+			Console.WriteLine(posY);
+			Console.WriteLine("--------");
+		}
+		
+	}
+}
